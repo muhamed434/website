@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЖК Zharyslam - Жаңалықтар</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Zharyslam</a>
+      <nav>
+        <div class="nav-links">
+          <a href="index.html">Басты</a>
+          <a href="about.html">Жоба</a>
+          <a href="plans.html">Планировкалар</a>
+          <a href="news.html" class="active">Жаңалықтар</a>
+          <a href="contact.html">Байланыс</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Жаңалықтар</h1>
+      <p>Жобамыздың соңғы жаңалықтары</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2 class="section-title">Соңғы жаңалықтар</h2>
+      
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-date">15 Қаңтар 2024</div>
+          <h3>Құрылыс жұмыстары аяқталуға жақын</h3>
+          <p>Бірінші көпқабаттың құрылысы 90% дайын. Біз сәуір айында қабылдауға дайын боламыз.</p>
+          <a href="#" class="read-more">Толығырақ →</a>
+        </article>
+        
+        <article class="news-card">
+          <div class="news-date">10 Қаңтар 2024</div>
+          <h3>Жаңа инфрақұрылым</h3>
+          <p>Кешеннің айналасында жаңа балабақша мен спорт алаңы салынуда.</p>
+          <a href="#" class="read-more">Толығырақ →</a>
+        </article>
+        
+        <article class="news-card">
+          <div class="news-date">25 Желтоқсан 2023</div>
+          <h3>Жыл соңғы жеңілдіктер</h3>
+          <p>Жыл аяғына арналған арнайы ұсыныстар: 1-бөлмелі пәтерлерге 5% жеңілдік.</p>
+          <a href="#" class="read-more">Толығырақ →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2023 ЖК Zharyslam. Барлық құқықтар сақталған.</p>
+    </div>
+  </footer>
+
+  <style>
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .news-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+    }
+    
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .news-date {
+      color: var(--secondary);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .news-card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    .read-more {
+      display: inline-block;
+      color: var(--secondary);
+      text-decoration: none;
+      margin-top: 1rem;
+      font-weight: 500;
+    }
+    
+    .read-more:hover {
+      text-decoration: underline;
+    }
+  </style>
+</body>
+</html>
